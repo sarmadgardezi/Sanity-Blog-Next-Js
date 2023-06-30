@@ -8,9 +8,9 @@ const NavBar = ({profile}) => {
         <div className="w-full z-50 top-0 py-3 sm:py-5  bg-primary ">
           <div className="container flex items-center justify-between mx-auto">
             <div className=' '>
-              <a href="/">
+            
               <h2 className='text-white text-2xl font-bold'>{profile.title}</h2>
-              </a>
+           
             </div>
             <div className="hidden lg:block">
               <ul className="flex items-center">
