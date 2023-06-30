@@ -69,27 +69,27 @@ const Post = ({ blog, profile }) => {
     <NavBar profile={profile} />
 
     <div>
-      <div class="container py-6 md:py-10">
-        <div class="mx-auto max-w-4xl">
-          <div class="">
+      <div className="container py-6 md:py-10">
+        <div className="mx-auto max-w-4xl">
+          <div className="">
             <h1
-              class="pt-5 font-body text-3xl font-semibold text-primary sm:text-4xl md:text-5xl xl:text-6xl">
+              className="pt-5 font-body text-3xl font-semibold text-primary sm:text-4xl md:text-5xl xl:text-6xl">
               {blog.title}
             </h1>
-            <div class="flex items-center pt-5 md:pt-10">
+            <div className="flex items-center pt-5 md:pt-10">
               <div>
                 <img src="/assets/img/blog-author.jpg"
-                  class="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
+                  className="h-20 w-20 rounded-full border-2 border-grey-70 shadow"
                   alt="author image" />
               </div>
-              <div class="pl-5">
-                <span class="block font-body text-xl font-bold text-grey-10">By Christy Smith</span>
-                <span class="block pt-1 font-body text-xl font-bold text-grey-30">February 27,
+              <div className="pl-5">
+                <span className="block font-body text-xl font-bold text-grey-10">By Christy Smith</span>
+                <span className="block pt-1 font-body text-xl font-bold text-grey-30">February 27,
                   2022</span>
               </div>
             </div>
           </div>
-          <div class="prose max-w-none pt-8">
+          <div className="prose max-w-none pt-8">
             <PortableText
               // Pass in block content straight from Sanity.io
               content={blog.content}
@@ -99,35 +99,35 @@ const Post = ({ blog, profile }) => {
               // structure without doing any gymnastics
               serializers={{
                 h1: (props) => <h1 style={{ color: "red" }} {...props} />,
-                li: ({ children }) => <li className="special-list-item">{children}</li>,
+                li: ({ children }) => <li classNameName="special-list-item">{children}</li>,
               }}
             />
 
           </div>
-          <div class="mt-10 flex justify-between border-t border-lila py-12">
-            <a href="/" class="flex items-center">
-              <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
+          <div className="mt-10 flex justify-between border-t border-lila py-12">
+            <a href="/" className="flex items-center">
+              <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
               <span
-                class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous
+                className="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous
                 Post</span>
             </a>
-            <a href="/" class="flex items-center">
-              <span class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next
+            <a href="/" className="flex items-center">
+              <span className="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next
                 Post</span>
-              <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
+              <i className="bx bx-right-arrow-alt text-2xl text-primary"></i>
             </a>
           </div>
           <div
-            class="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
-            <div class="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
-              <img src="/assets/img/blog-author.jpg" class="rounded-full shadow" alt="author image" />
+            className="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20">
+            <div className="w-3/4 sm:w-2/5 lg:w-1/4 xl:w-1/5">
+              <img src="/assets/img/blog-author.jpg" className="rounded-full shadow" alt="author image" />
             </div>
-            <div class="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
-              <h3 class="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">
+            <div className="ml-0 text-center md:ml-10 md:w-5/6 md:text-left">
+              <h3 className="pt-10 font-body text-2xl font-bold text-secondary md:pt-0">
                 Christy Smith
               </h3>
               <p
-                class="pt-5 font-body text-lg leading-8 text-secondary sm:leading-9 md:text-xl md:leading-9 lg:leading-9 xl:leading-9">
+                className="pt-5 font-body text-lg leading-8 text-secondary sm:leading-9 md:text-xl md:leading-9 lg:leading-9 xl:leading-9">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -136,21 +136,21 @@ const Post = ({ blog, profile }) => {
                 velit.
 
               </p>
-              <div class="flex items-center justify-center pt-5 md:justify-start">
+              <div className="flex items-center justify-center pt-5 md:justify-start">
                 <a href="/">
-                  <i class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
+                  <i className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="/" class="pl-4">
-                  <i class="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
+                <a href="/" className="pl-4">
+                  <i className="bx bxl-twitter text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="/" class="pl-4">
-                  <i class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
+                <a href="/" className="pl-4">
+                  <i className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="/" class="pl-4">
-                  <i class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
+                <a href="/" className="pl-4">
+                  <i className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"></i>
                 </a>
-                <a href="/" class="pl-4">
-                  <i class="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
+                <a href="/" className="pl-4">
+                  <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
                 </a>
               </div>
             </div>
@@ -159,26 +159,26 @@ const Post = ({ blog, profile }) => {
       </div>
     </div>
 
-    <div class="bg-primary">
-      <div class="container flex flex-col justify-between py-6 sm:flex-row">
-        <p class="text-center font-body text-white md:text-left">
+    <div className="bg-primary">
+      <div className="container flex flex-col justify-between py-6 sm:flex-row">
+        <p className="text-center font-body text-white md:text-left">
           © Copyright 2022. All right reserved, ATOM.
         </p>
-        <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+        <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
           <a href="/">
-            <i class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+            <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
           </a>
-          <a href="/" class="pl-4">
-            <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+          <a href="/" className="pl-4">
+            <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
           </a>
-          <a href="/" class="pl-4">
-            <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+          <a href="/" className="pl-4">
+            <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
           </a>
-          <a href="/" class="pl-4">
-            <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+          <a href="/" className="pl-4">
+            <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
           </a>
-          <a href="/" class="pl-4">
-            <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+          <a href="/" className="pl-4">
+            <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
           </a>
         </div>
       </div>
